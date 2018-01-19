@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 54903852756767740}
   - component: {fileID: 135085373537217568}
   - component: {fileID: 114064321870766722}
+  - component: {fileID: 114046072830902600}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -71,14 +72,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1915959792198448}
-  m_LocalRotation: {x: 0.16493173, y: 0.0000051318857, z: -0.00000085816356, w: 0.98630506}
-  m_LocalPosition: {x: 0, y: 3.44064, z: -10}
+  m_LocalRotation: {x: 0.042881314, y: -0, z: -0, w: 0.9990802}
+  m_LocalPosition: {x: 0, y: 0.8568375, z: -9.963223}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4557360911881780}
   m_Father: {fileID: 4780834469492092}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5, y: 0, z: 0}
 --- !u!4 &4557360911881780
 Transform:
   m_ObjectHideFlags: 1
@@ -163,6 +164,73 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114046072830902600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049750715810832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbdf5a6b1cc27d74cab63a5666d2960a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sendEveryXTick: 3
+  rewindHitLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  rewindGO: {fileID: 0}
+  autoKinematic: 1
+  rootPosSync: 1
+  includeXYZ:
+    x: 1
+    y: 1
+    z: 1
+  sendCulling: 0
+  keyEvery: 5
+  extrapolation: 0.5
+  teleportThreshold: 1
+  cullUpperBits: 0
+  sequentialKeys: 5
+  positionElements: []
+  rotationElements:
+  - isRoot: 0
+    nst: {fileID: 0}
+    elementType: 1
+    sendCulling: 2
+    keyRate: 5
+    gameobject: {fileID: 0}
+    extrapolation: 0.5
+    rewindGO: {fileID: 0}
+    lastSentKeyTime: 0
+    snapshotTime: 0
+    rotationType: 15
+    totalBitsForQuat: 40
+    xBits: 11
+    xLimitRange: 0
+    xMinValue: 0
+    xMaxValue: 360
+    yBits: 10
+    yLimitRange: 1
+    yMinValue: -90
+    yMaxValue: 90
+    zBits: 10
+    zLimitRange: 0
+    zMinValue: -90
+    zMaxValue: 90
+    xyzBits: 
+    xyzLimit: 
+    xyzMin: []
+    xyzMax: []
+    xyzRange: []
+    xyzMult: []
+    xyzUnmult: []
+    xyzWrappoint: []
+    useLocal: 0
+  debugXform: 0
+  debugXformGO: {fileID: 0}
+  rb: {fileID: 0}
+  NI: {fileID: 0}
 --- !u!114 &114064321870766722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -255,10 +323,10 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_LookAt: {fileID: 4780834469492092}
+  m_LookAt: {fileID: 0}
   m_Follow: {fileID: 4780834469492092}
   m_Lens:
-    FieldOfView: 40
+    FieldOfView: 60.2
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
